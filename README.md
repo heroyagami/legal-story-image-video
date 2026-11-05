@@ -8,6 +8,7 @@
 - **环境**：真实中国城市、售楼部、医院、工厂、家庭、律所等写实背景，电影感光影和真实空间透视。
 - **情绪**：用镜头、天气、光色、动作传达希望、危机与释然，治愈感不等于弱化事实。
 - **素材**：人物与背景独立生成，人物始终使用透明通道（PNG RGBA / SVG 透明），在合成阶段叠加。
+- **真实尺度**：避免全片大头近景，同时禁止刻意缩小人物；人物与沙发、桌椅、病床、门窗按真实尺寸、景别和空间透视匹配。
 
 ## 一次视频的完整流程
 
@@ -24,6 +25,7 @@
 - **双层生成提示词**：[references/prompts.md](references/prompts.md)
 - **分镜表模板**：[references/shot-list-template.csv](references/shot-list-template.csv)
 - **交付标准**：[docs/delivery-checklist.md](docs/delivery-checklist.md)
+- **透视与构图约束**：[docs/perspective-and-framing.md](docs/perspective-and-framing.md)
 
 在 Codex、Claude Code 或其他支持 Skills 的 Agent 中，直接打开本仓库作为项目工作区，提出例如：
 

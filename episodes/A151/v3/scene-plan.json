@@ -1,6 +1,6 @@
 {
   "episode": "A151",
-  "version": "v3-rebuild-plan",
+  "version": "v3.1-perspective-calibrated",
   "created": "2026-11-05",
   "duration_audio": 203.4415,
   "last_srt_timestamp": 203.28,
@@ -9,10 +9,11 @@
   "render_status": "NOT_RENDERED",
   "notes": [
     "Every scene requires a genuinely independent new photoreal environment image; crop/zoom/flip not counted as new asset.",
-    "All drawn characters from alpha PNG, no hair, small figures occupying <18% height in ordinary shots.",
     "No fake courtroom documents, medical records, banners, logo or video UI in generated background.",
     "Still camera default; if moving slow, <=1.5% single direction, <=0.3% translation. No handheld jitter.",
-    "No upload of private MP3/SRT to public repo."
+    "No upload of private MP3/SRT to public repo.",
+    "Character-to-environment scale follows real adult body dimensions, camera distance, foreground depth and local props (sofa, bed, chair, desk, door). NEVER downsize all characters to fit a fixed pixel-height percentage.",
+    "Manage overall composition with shot size/camera placement, not numeric height caps. Use environmental wide shots but keep nearby characters physically plausible."
   ],
   "shots": [
     {
@@ -24,10 +25,17 @@
       "beat": "开场：多年同居的早晨",
       "scene": "温暖中国普通家庭开放式客厅，清晨斜射阳光，木餐桌和两只茶杯。情绪色温：warm，景别：wide。",
       "character": "two_adults",
-      "character_height_max": 0.14,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "sofa seat height",
+        "backrest",
+        "coffee table",
+        "window"
+      ]
     },
     {
       "id": "A151-S002",
@@ -38,10 +46,17 @@
       "beat": "空房：失去伴侣",
       "scene": "同一类住宅但全新角度，傍晚雨窗、空扶手椅和没喝完的热茶。情绪色温：cool，景别：wide。",
       "character": "widow_jl",
-      "character_height_max": 0.12,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "sofa seat height",
+        "backrest",
+        "coffee table",
+        "window"
+      ]
     },
     {
       "id": "A151-S003",
@@ -52,10 +67,16 @@
       "beat": "法定身份的冰冷现实",
       "scene": "县城婚姻登记大厅的宽阔安静走廊、远处桌椅、自然天光。情绪色温：neutral，景别：establish。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S004",
@@ -66,10 +87,17 @@
       "beat": "法律边界",
       "scene": "写实律所大窗外城市轮廓，原木书桌与法典，律师坐在桌后偏远处。情绪色温：neutral，景别：wide。",
       "character": "lawyer",
-      "character_height_max": 0.13,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "desk height",
+        "office chair",
+        "armrests",
+        "door frame"
+      ]
     },
     {
       "id": "A151-S005",
@@ -80,10 +108,16 @@
       "beat": "故事仍有转机",
       "scene": "冬日清晨的吉林小城街巷，街道长透视，老人步行背影。情绪色温：hope，景别：extreme_wide。",
       "character": "widow_jl",
-      "character_height_max": 0.08,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S006",
@@ -94,10 +128,16 @@
       "beat": "吉林十多年生活",
       "scene": "旧式中国住宅厨房及木质餐桌，两位中老年人在远处准备晚餐。情绪色温：warm，景别：wide。",
       "character": "couple_jl",
-      "character_height_max": 0.12,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S007",
@@ -108,10 +148,17 @@
       "beat": "医院手术",
       "scene": "医院外景全景，清晨高楼及冷色玻璃幕墙，远处行人替换为无人物。情绪色温：cool，景别：establish。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "bed mattress height",
+        "bed length",
+        "bedside chair",
+        "caregiver natural seated body"
+      ]
     },
     {
       "id": "A151-S008",
@@ -122,10 +169,16 @@
       "beat": "外地女儿返家",
       "scene": "火车站入站大厅到远处公交出口的透视场景，一位带包的成年女性抽象小人远处奔走。情绪色温：cool，景别：wide。",
       "character": "daughter_jl",
-      "character_height_max": 0.09,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S009",
@@ -136,10 +189,17 @@
       "beat": "床边陪护",
       "scene": "有自然天光的中国医院普通病房，中老年女士坐在患者床边轻握手。情绪色温：cool，景别：wide。",
       "character": "couple_jl",
-      "character_height_max": 0.18,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "bed mattress height",
+        "bed length",
+        "bedside chair",
+        "caregiver natural seated body"
+      ]
     },
     {
       "id": "A151-S010",
@@ -150,10 +210,16 @@
       "beat": "没有遗嘱留下住宅",
       "scene": "写实中国老式多层住宅外立面，静静停着的自行车与树木。情绪色温：neutral，景别：wide。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S011",
@@ -164,10 +230,16 @@
       "beat": "继承登记",
       "scene": "公证服务大厅，玻璃隔断与办事柜台，文件夹但无可识别个人数据。情绪色温：neutral，景别：wide。",
       "character": "daughter_jl",
-      "character_height_max": 0.1,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S012",
@@ -178,10 +250,17 @@
       "beat": "请求三万元",
       "scene": "写实律师事务所的文件归档室，堆放的档案夹和一张空桌子。情绪色温：cool，景别：wide。",
       "character": "widow_jl",
-      "character_height_max": 0.13,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "desk height",
+        "office chair",
+        "armrests",
+        "door frame"
+      ]
     },
     {
       "id": "A151-S013",
@@ -192,10 +271,16 @@
       "beat": "身份争议",
       "scene": "真实法院石材大堂，远景法庭外走廊，留出大量空间。情绪色温：neutral，景别：establish。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S014",
@@ -206,10 +291,17 @@
       "beat": "没有法定继承身份",
       "scene": "中国现代律所中景，全景书柜与律师位于空间左侧。情绪色温：neutral，景别：wide。",
       "character": "lawyer",
-      "character_height_max": 0.11,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "medium",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "desk height",
+        "office chair",
+        "armrests",
+        "door frame"
+      ]
     },
     {
       "id": "A151-S015",
@@ -220,10 +312,17 @@
       "beat": "民法典适用",
       "scene": "书桌局部真实微距：红色封面法律书、钢笔、台灯（文字后期排版）。情绪色温：warm，景别：detail。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "detail",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "desk height",
+        "office chair",
+        "armrests",
+        "door frame"
+      ]
     },
     {
       "id": "A151-S016",
@@ -234,10 +333,17 @@
       "beat": "可以酌情分配",
       "scene": "办公室自然光下的两人隔桌咨询镜头，人物极小占据画面下方。情绪色温：neutral，景别：wide。",
       "character": "lawyer+widow_jl",
-      "character_height_max": 0.13,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "desk height",
+        "office chair",
+        "armrests",
+        "door frame"
+      ]
     },
     {
       "id": "A151-S017",
@@ -248,10 +354,16 @@
       "beat": "平凡日常扶助",
       "scene": "家中落地窗外柔和午后光，厨房里两位老人远景，一人递给另一人水杯。情绪色温：warm，景别：wide。",
       "character": "couple_jl",
-      "character_height_max": 0.1,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S018",
@@ -262,10 +374,17 @@
       "beat": "长期照顾得到认可",
       "scene": "住院病房另一全新角度，护工椅、床头台与夕阳透过窗帘。情绪色温：hope，景别：wide。",
       "character": "couple_jl",
-      "character_height_max": 0.15,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "bed mattress height",
+        "bed length",
+        "bedside chair",
+        "caregiver natural seated body"
+      ]
     },
     {
       "id": "A151-S019",
@@ -276,10 +395,16 @@
       "beat": "一审二审支持",
       "scene": "法院前台阶与高树树影，天空留白，人群不出现。情绪色温：neutral，景别：establish。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S020",
@@ -290,10 +415,16 @@
       "beat": "重庆时光",
       "scene": "重庆两江交汇处山城远景、城市天际线与大桥，真实摄影感。情绪色温：warm，景别：establish。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S021",
@@ -304,10 +435,16 @@
       "beat": "同居生活终止",
       "scene": "重庆老式临江住宅宽阔餐厅，桌上两只茶杯，其中一张椅子空着。情绪色温：cool，景别：wide。",
       "character": "widow_cq",
-      "character_height_max": 0.11,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S022",
@@ -318,10 +455,17 @@
       "beat": "家属身份",
       "scene": "现代普通中式客厅，年迈母亲与成年儿子远处坐在沙发上。情绪色温：neutral，景别：wide。",
       "character": "family_cq",
-      "character_height_max": 0.11,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "sofa seat height",
+        "backrest",
+        "coffee table",
+        "window"
+      ]
     },
     {
       "id": "A151-S023",
@@ -332,10 +476,16 @@
       "beat": "车辆与存款",
       "scene": "小区地下停车场远景，一辆无商标黑色家用车和混凝土柱。情绪色温：cool，景别：establish。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S024",
@@ -346,10 +496,16 @@
       "beat": "一审财产争议",
       "scene": "写实文件桌面近景，银行卡模糊、抽象数字便签留白，不能假造真实账目。情绪色温：neutral，景别：detail。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "detail",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S025",
@@ -360,10 +516,16 @@
       "beat": "二审补充查明",
       "scene": "法院外不同时段石台阶、秋冬雨后地面反光。情绪色温：cool，景别：extreme_wide。",
       "character": "widow_cq",
-      "character_height_max": 0.07,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S026",
@@ -374,10 +536,17 @@
       "beat": "2012年治疗史",
       "scene": "医院门诊大厅整体广角，空旷轮椅位和明亮采光。情绪色温：cool，景别：wide。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "bed mattress height",
+        "bed length",
+        "bedside chair",
+        "caregiver natural seated body"
+      ]
     },
     {
       "id": "A151-S027",
@@ -388,10 +557,17 @@
       "beat": "更多病情与住院",
       "scene": "另一间病房窗边远景，患者远处卧床与监护设备。情绪色温：cool，景别：wide。",
       "character": "patient_cq",
-      "character_height_max": 0.13,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "bed mattress height",
+        "bed length",
+        "bedside chair",
+        "caregiver natural seated body"
+      ]
     },
     {
       "id": "A151-S028",
@@ -402,10 +578,17 @@
       "beat": "病危与签署",
       "scene": "医院护士站朝病房走廊的长镜头，签字台和病历夹、无清晰文字。情绪色温：neutral，景别：wide。",
       "character": "widow_cq",
-      "character_height_max": 0.09,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "bed mattress height",
+        "bed length",
+        "bedside chair",
+        "caregiver natural seated body"
+      ]
     },
     {
       "id": "A151-S029",
@@ -416,10 +599,17 @@
       "beat": "长年照料",
       "scene": "陪护者在病房里为病人掖被角，广角透视，人物占比小。情绪色温：warm，景别：wide。",
       "character": "couple_cq",
-      "character_height_max": 0.16,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "bed mattress height",
+        "bed length",
+        "bedside chair",
+        "caregiver natural seated body"
+      ]
     },
     {
       "id": "A151-S030",
@@ -430,10 +620,17 @@
       "beat": "扶养不只是钱",
       "scene": "傍晚病房外的走廊，窗边抽象小人低头坐着，远处消失点。情绪色温：cool，景别：wide。",
       "character": "widow_cq",
-      "character_height_max": 0.12,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "bed mattress height",
+        "bed length",
+        "bedside chair",
+        "caregiver natural seated body"
+      ]
     },
     {
       "id": "A151-S031",
@@ -444,10 +641,16 @@
       "beat": "精神慰藉同样重要",
       "scene": "开阔公园黄昏长椅，老年伴侣在远处相互扶持坐着。情绪色温：warm，景别：extreme_wide。",
       "character": "couple_cq",
-      "character_height_max": 0.09,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S032",
@@ -458,10 +661,16 @@
       "beat": "二审认可付出",
       "scene": "法院宽阔候审大厅不同角度，女方远处站在窗边。情绪色温：hope，景别：wide。",
       "character": "widow_cq",
-      "character_height_max": 0.09,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S033",
@@ -472,10 +681,17 @@
       "beat": "车辆与25万",
       "scene": "深蓝天色的停车场，一辆无品牌家庭轿车停在大楼前，人物位于远处。情绪色温：neutral，景别：wide。",
       "character": "widow_cq",
-      "character_height_max": 0.08,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "sofa seat height",
+        "backrest",
+        "coffee table",
+        "window"
+      ]
     },
     {
       "id": "A151-S034",
@@ -486,10 +702,16 @@
       "beat": "其他遗产由亲属继承",
       "scene": "现代中国住宅入口，家属两人站在宽阔室内边缘。情绪色温：neutral，景别：wide。",
       "character": "family_cq",
-      "character_height_max": 0.12,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S035",
@@ -500,10 +722,17 @@
       "beat": "两个案件比较",
       "scene": "写实城市律所会议空间，窗外楼宇，与法律书架，镜头整体空旷。情绪色温：neutral，景别：wide。",
       "character": "lawyer",
-      "character_height_max": 0.1,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "desk height",
+        "office chair",
+        "armrests",
+        "door frame"
+      ]
     },
     {
       "id": "A151-S036",
@@ -514,10 +743,16 @@
       "beat": "同居不等于配偶",
       "scene": "婚姻登记处一角，空白的登记窗与座椅，不出现证书。情绪色温：cool，景别：wide。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S037",
@@ -528,10 +763,16 @@
       "beat": "不自动有同等份额",
       "scene": "法庭宽景，审判席与空座椅，真实木饰面。情绪色温：neutral，景别：wide。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S038",
@@ -542,10 +783,16 @@
       "beat": "财产共有需证明",
       "scene": "住宅餐桌散放购房合同的空白封套、收据等概念道具，不显示伪造文字。情绪色温：neutral，景别：detail。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "detail",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S039",
@@ -556,10 +803,16 @@
       "beat": "扶养事实证明",
       "scene": "老年人公寓长廊，远处一个小人慢慢搀扶另外一人。情绪色温：warm，景别：extreme_wide。",
       "character": "couple_cq",
-      "character_height_max": 0.11,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S040",
@@ -570,10 +823,17 @@
       "beat": "酌分适当遗产",
       "scene": "阳光进入律所阅览室，律师背对镜头翻阅法典，全景。情绪色温：hope，景别：wide。",
       "character": "lawyer",
-      "character_height_max": 0.12,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "desk height",
+        "office chair",
+        "armrests",
+        "door frame"
+      ]
     },
     {
       "id": "A151-S041",
@@ -584,10 +844,17 @@
       "beat": "可以与适当",
       "scene": "律师桌上的法律书页与放大镜近景，条文文字留空后期添加。情绪色温：neutral，景别：detail。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "detail",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "desk height",
+        "office chair",
+        "armrests",
+        "door frame"
+      ]
     },
     {
       "id": "A151-S042",
@@ -598,10 +865,16 @@
       "beat": "并非住在一起就能分",
       "scene": "写实小区两栋楼间的傍晚步行道，几位远处人物的背影。情绪色温：neutral，景别：wide。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S043",
@@ -612,10 +885,17 @@
       "beat": "照护记录",
       "scene": "整洁家庭书桌，药盒、日历、无字记录本与家用台灯，拍摄角度特写。情绪色温：warm，景别：detail。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "detail",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "desk height",
+        "office chair",
+        "armrests",
+        "door frame"
+      ]
     },
     {
       "id": "A151-S044",
@@ -626,10 +906,16 @@
       "beat": "居住与费用凭证",
       "scene": "写实木桌俯视，信封、缴费单留白、照片背面和钥匙。情绪色温：neutral，景别：detail。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "detail",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S045",
@@ -640,10 +926,17 @@
       "beat": "证据让付出可见",
       "scene": "医院门口另一斜角，暖阳穿过玻璃，独自一人站在远处。情绪色温：hope，景别：wide。",
       "character": "widow_cq",
-      "character_height_max": 0.09,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "bed mattress height",
+        "bed length",
+        "bedside chair",
+        "caregiver natural seated body"
+      ]
     },
     {
       "id": "A151-S046",
@@ -654,10 +947,17 @@
       "beat": "事先安排",
       "scene": "安静的城市家庭书房，长桌、暖灯和开放窗户，远景。情绪色温：warm，景别：wide。",
       "character": "couple_cq",
-      "character_height_max": 0.13,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "sofa seat height",
+        "backrest",
+        "coffee table",
+        "window"
+      ]
     },
     {
       "id": "A151-S047",
@@ -668,10 +968,16 @@
       "beat": "希望保障伴侣",
       "scene": "小区花园花树下远处两人相伴行走，侧逆光。情绪色温：warm，景别：extreme_wide。",
       "character": "couple_cq",
-      "character_height_max": 0.09,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S048",
@@ -682,10 +988,16 @@
       "beat": "立遗嘱安排",
       "scene": "写实书房桌面契约文书示意，手写笔放在旁边，无具体真实签名。情绪色温：warm，景别：detail。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "detail",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S049",
@@ -696,10 +1008,16 @@
       "beat": "保存共同财产证据",
       "scene": "家中整理资料的宽景，两人坐在远处，桌边档案箱。情绪色温：warm，景别：wide。",
       "character": "couple_cq",
-      "character_height_max": 0.11,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S050",
@@ -710,10 +1028,16 @@
       "beat": "结婚证决定身份",
       "scene": "写实城市婚姻登记大厅外景夜幕初降，玻璃幕墙光影。情绪色温：neutral，景别：wide。",
       "character": "none",
-      "character_height_max": 0,
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "doors/people-scale architecture",
+        "foreground floor plane",
+        "scene props at matched depth"
+      ]
     },
     {
       "id": "A151-S051",
@@ -724,10 +1048,17 @@
       "beat": "陪伴走过疾病",
       "scene": "医院花园夕阳下远处两位老年人的背影，极简人物。情绪色温：hope，景别：extreme_wide。",
       "character": "couple_cq",
-      "character_height_max": 0.08,
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "bed mattress height",
+        "bed length",
+        "bedside chair",
+        "caregiver natural seated body"
+      ]
     },
     {
       "id": "A151-S052",
@@ -738,10 +1069,17 @@
       "beat": "曹义德律师收束",
       "scene": "写实律所夜景，窗外城市灯火，律师站在落地窗一侧，镜头很远。情绪色温：warm，景别：wide。",
       "character": "lawyer",
-      "character_height_max": 0.13,
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true
+      "unique_background_required": true,
+      "framing": "wide",
+      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
+      "scale_anchors": [
+        "desk height",
+        "office chair",
+        "armrests",
+        "door frame"
+      ]
     }
   ]
 }

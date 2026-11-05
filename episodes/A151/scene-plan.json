@@ -1,0 +1,203 @@
+{
+  "title": "A151 同居伴侣去世没领证还能分遗产吗",
+  "version": "pilot-plan-0.1",
+  "fps": 30,
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "audio_duration_seconds": 203.4415,
+  "srt_cues": 85,
+  "srt_last_end_seconds": 203.28,
+  "status": "planning-assets-pending",
+  "style": "transparent 2D white round head dot-eye simple characters over separately generated photoreal backgrounds",
+  "character_rules": "无头发、无复杂五官；律师眼镜+黑律师袍红领带；两案角色不得混淆",
+  "scenes": [
+    {
+      "id": "S01",
+      "start": 0,
+      "end": 3.36,
+      "title": "家庭暖色回忆",
+      "background": "home",
+      "characters": [
+        "吉林金某",
+        "千某"
+      ],
+      "action": "多年相伴"
+    },
+    {
+      "id": "S02",
+      "start": 3.36,
+      "end": 7.44,
+      "title": "人去楼空",
+      "background": "home_empty",
+      "characters": [
+        "吉林金某"
+      ],
+      "action": "空椅与一人"
+    },
+    {
+      "id": "S03",
+      "start": 7.44,
+      "end": 17,
+      "title": "身份边界",
+      "background": "law_office",
+      "characters": [
+        "曹义德律师"
+      ],
+      "action": "未登记不等于法定配偶"
+    },
+    {
+      "id": "S04",
+      "start": 17,
+      "end": 22.64,
+      "title": "吉林共同生活12年",
+      "background": "jl_home",
+      "characters": [
+        "吉林金某",
+        "千某"
+      ],
+      "action": "同居生活"
+    },
+    {
+      "id": "S05",
+      "start": 22.64,
+      "end": 34.44,
+      "title": "患癌与陪护",
+      "background": "hospital",
+      "characters": [
+        "吉林金某",
+        "千某"
+      ],
+      "action": "生活照料"
+    },
+    {
+      "id": "S06",
+      "start": 34.44,
+      "end": 47.36,
+      "title": "房屋与起诉",
+      "background": "home_legal",
+      "characters": [
+        "吉林金某",
+        "女儿"
+      ],
+      "action": "房屋登记与3万元诉求"
+    },
+    {
+      "id": "S07",
+      "start": 47.36,
+      "end": 66.36,
+      "title": "民法典1131条",
+      "background": "law_office",
+      "characters": [
+        "曹义德律师"
+      ],
+      "action": "酌分遗产规则"
+    },
+    {
+      "id": "S08",
+      "start": 66.36,
+      "end": 76.736,
+      "title": "吉林二审维持",
+      "background": "court",
+      "characters": [
+        "吉林金某"
+      ],
+      "action": "支持3万元"
+    },
+    {
+      "id": "S09",
+      "start": 76.736,
+      "end": 91.96,
+      "title": "重庆同居十年",
+      "background": "cq_home",
+      "characters": [
+        "重庆杨某",
+        "汪某"
+      ],
+      "action": "汽车和银行存款争议"
+    },
+    {
+      "id": "S10",
+      "start": 91.96,
+      "end": 99.72,
+      "title": "一审争议",
+      "background": "court_corridor",
+      "characters": [
+        "重庆杨某",
+        "母亲",
+        "儿子"
+      ],
+      "action": "保管与归属"
+    },
+    {
+      "id": "S11",
+      "start": 99.72,
+      "end": 118.52,
+      "title": "医院照护证据",
+      "background": "hospital",
+      "characters": [
+        "重庆杨某",
+        "汪某"
+      ],
+      "action": "住院联系人、长期陪护"
+    },
+    {
+      "id": "S12",
+      "start": 118.52,
+      "end": 136.8,
+      "title": "重庆二审改判",
+      "background": "law_office",
+      "characters": [
+        "曹义德律师",
+        "重庆杨某"
+      ],
+      "action": "车辆归女方+25万元"
+    },
+    {
+      "id": "S13",
+      "start": 136.8,
+      "end": 167.68,
+      "title": "两案比较",
+      "background": "law_office",
+      "characters": [
+        "曹义德律师"
+      ],
+      "action": "法定继承与酌分遗产区分"
+    },
+    {
+      "id": "S14",
+      "start": 167.68,
+      "end": 179.68,
+      "title": "如何举证",
+      "background": "evidence_desk",
+      "characters": [
+        "抽象人物"
+      ],
+      "action": "住院与生活照护示意"
+    },
+    {
+      "id": "S15",
+      "start": 179.68,
+      "end": 192.56,
+      "title": "提前安排",
+      "background": "writing_desk",
+      "characters": [
+        "抽象人物"
+      ],
+      "action": "遗嘱及权属证据"
+    },
+    {
+      "id": "S16",
+      "start": 192.56,
+      "end": 203.28,
+      "title": "结尾",
+      "background": "sunset_office",
+      "characters": [
+        "曹义德律师"
+      ],
+      "action": "情绪收束+关注"
+    }
+  ],
+  "notice": "未制作3张合格单幅关键帧或实际MP4；本文件不代表成片已生成。"
+}

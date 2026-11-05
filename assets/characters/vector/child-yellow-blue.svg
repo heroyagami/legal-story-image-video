@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="child-yellow-blue.svg" width="640" height="960" viewBox="0 0 640 960">
+<title>child-yellow-blue.svg | transparent minimal abstract character</title>
+<g stroke="#202329" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M272 688 L267 828 Q269 842 294 840 L312 833 L321 704 Z" fill="#4b7cb7"/>
+ <path d="M371 687 L377 827 Q377 844 352 843 L328 834 L319 704 Z" fill="#4b7cb7"/>
+ <path d="M255 827 Q283 817 309 834 L315 861 Q278 884 235 869 Q225 853 255 827Z" fill="#f7fafb"/>
+ <path d="M335 834 Q361 813 386 827 Q413 853 405 870 Q362 882 328 860Z" fill="#f7fafb"/>
+ <path d="M240 401 Q320 365 402 401 L435 674 Q320 712 205 674 Z" fill="#f3c34d"/>
+ 
+ <path d="M218 451 Q180 534 221 606" fill="none" stroke="#f3c34d" stroke-width="70"/>
+ <circle cx="220" cy="618" r="30" fill="#fff"/>
+ <path d="M423 450 Q457 540 419 607" fill="none" stroke="#f3c34d" stroke-width="70"/>
+ <circle cx="416" cy="618" r="30" fill="#fff"/>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <path d="M266 505 L373 505" stroke="#e5ab25" stroke-width="5"/>
+ 
+ <circle cx="320" cy="246" r="137" fill="#ffffff"/>
+ <ellipse cx="277" cy="237" rx="10" ry="13" fill="#21242a" stroke="none"/>
+ <ellipse cx="362" cy="237" rx="10" ry="13" fill="#21242a" stroke="none"/>
+ <path d="M302 287 Q321 302 342 287" fill="none" stroke-width="6"/>
+ 
+ 
+ 
+</g>
+</svg>

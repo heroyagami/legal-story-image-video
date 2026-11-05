@@ -1,0 +1,4 @@
+shot_id,narration,duration_est_sec,background_id,character_ids,action,mood,framing,camera_move,image_to_video_required,sound,qa_status
+001,你以为终于有自己的家,5,bg_sales,buyer;wife,look at sales model,hopeful,medium,slow push,no,warm score,pending
+002,楼盘却突然停工,5,bg_stalled,buyer,standing in rain,worried,wide,slow pull,no,rain,pending
+003,律师帮你梳理法律路径,6,bg_office,lawyer_caoyide;buyer,explain contract,calm,medium,subtle pan,no,pages,pending

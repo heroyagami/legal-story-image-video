@@ -1,70 +1,32 @@
 # Legal Story Image Video｜法律故事生图视频
 
-**独立的 AI 生图 / 图生视频创作项目。** 用「透明背景极简抽象小人 + 写实电影感背景」讲述法律故事。人物、背景分层生成，最后通过常规剪辑软件或图生视频服务合成，**不是代码动画项目**。
+这是一个**与 `vibe-motion-private` 完全独立的生图 / 图生视频项目**，用于把真实法律故事制作成有电影感的叙事视频。
 
-## 视觉路线
+## 你确认的视觉定位
+**极简治愈二维抽象卡通人物 + 高细节电影化现实生活场景。**
 
-- **人物**：白色圆头、黑点眼睛、极简嘴巴、粗描边、简单服饰；优先无头发的抽象风格，避免日系精致动漫和真人五官。
-- **环境**：真实中国城市、售楼部、医院、工厂、家庭、律所等写实背景，电影感光影和真实空间透视。
-- **情绪**：用镜头、天气、光色、动作传达希望、危机与释然，治愈感不等于弱化事实。
-- **素材**：人物与背景独立生成，人物始终使用透明通道（PNG RGBA / SVG 透明），在合成阶段叠加。
-- **真实尺度**：避免全片大头近景，同时禁止刻意缩小人物；人物与沙发、桌椅、病床、门窗按真实尺寸、景别和空间透视匹配。
+人物白色大圆脸、豆豆眼、简化眉嘴，**允许并经常具有块面化黑色或棕色发型**，穿宽松、简练的衣服；场景是有可信材质、空间和电影光照的真实中国家庭、医院、街道、律所等。人物在同一画面里自然坐、站、照料、行走，与家具尺寸、透视和光影一致。
 
-## 一次视频的完整流程
+> **重要**：人物的一致性由文字设定、参考画面对照和审片维持，不再由某张 SVG、透明贴纸或代码人物决定。此前强制无发白球、人物8%–18%、SVG贴片路线均已否决。
 
-选题与法律事实核验 → 故事文案 → 角色定妆/透明资产 → 纯背景生图 → 分镜表 → 静态镜头与少量图生视频 → 旁白与字幕 → 多轨剪辑 → 人工/自动审核 → 输出成片。
+## 项目指南
+- [文字画风宪章](docs/visual-style-bible.md) — 全项目最高视觉标准
+- [AI Agent 项目规则](AGENTS.md)
+- [可调用 Skill](.agents/skills/legal-story-image-video/SKILL.md)
+- [A151 文字角色卡](references/a151-character-bible.md)
+- [角色 JSON 例子](references/character-manifest.example.json)
+- [文字生图/视频提示词](references/prompts.md)
+- [真实透视和构图](docs/perspective-and-framing.md)
+- [画质验收](docs/reference-style-qa.md)
+- [A151 本期镜头进度](episodes/A151/README.md)
 
-每期先完成 **3 张关键帧 + 20–30 秒试片**，通过角色一致性、写实背景、法律准确性及声音审核后再扩展整片。
+## 正确工作流
+题材/裁判事实核验 → 角色文字设定 → 52镜头（或其他独立新镜头）→ 逐镜直接生成人物与场景融合的完整单幅画面 → 用角色文字卡校对并局部重绘 → 图生视频/稳镜头 → 旁白+字幕+剪辑 → 完整观看/听审 → MP4。
 
-## AI Agent 入口
+A151 原配音203.44秒、字幕85条，目标52张独立新画面（至少40张），不允许把同一张照片变焦裁切算多张。人物与家具比例正常，运镜稳定，非真人、非3D球头、非日系Q版、非贴纸、非九宫格海报。
 
-- **运行规范**：[AGENTS.md](AGENTS.md)
-- **独立 Skill**：[.agents/skills/legal-story-image-video/SKILL.md](.agents/skills/legal-story-image-video/SKILL.md)
-- **人物模板（透明 SVG）**：[assets/characters/vector/](assets/characters/vector/)
-- **角色清单**：[references/character-manifest.example.json](references/character-manifest.example.json)
-- **双层生成提示词**：[references/prompts.md](references/prompts.md)
-- **分镜表模板**：[references/shot-list-template.csv](references/shot-list-template.csv)
-- **交付标准**：[docs/delivery-checklist.md](docs/delivery-checklist.md)
-- **透视与构图约束**：[docs/perspective-and-framing.md](docs/perspective-and-framing.md)
+## A151 实际状态
+项目规划与旧试验已存在，但**历史的3图长片、SVG贴纸角色、九宫格海报并未获得视觉通过**；在画面资产真正满足文字风格规范之前，不声称第三版52张图或完整版已完成。旧SVG试验文件已从活动仓库撤下，必要时可从Git历史回溯，但不作为制作标准。
 
-在 Codex、Claude Code 或其他支持 Skills 的 Agent 中，直接打开本仓库作为项目工作区，提出例如：
-
-> 使用本仓库的 legal-story-image-video Skill，制作《一个买到烂尾楼的普通人会经历什么》。先核验事实，生成分镜和角色/写实背景，先完成30秒试片，不修改其他视频项目。
-
-Skill 也可复制到执行器支持的项目级 Skills 目录。具体技能自动发现机制由执行器决定；只把文件放在仓库里不代表第三方 Agent 已完成安装。
-
-## 资产目录
-
-```text
-legal-story-image-video/
-├─ README.md
-├─ AGENTS.md
-├─ .agents/skills/legal-story-image-video/SKILL.md
-├─ references/
-│  ├─ prompts.md
-│  ├─ character-manifest.example.json
-│  └─ shot-list-template.csv
-├─ assets/characters/vector/      # 透明 SVG：可编辑的抽象角色母版
-└─ docs/delivery-checklist.md
-```
-
-SVG 母版可导出成透明 PNG。前期另行生成的 8 张 PNG 为**概念初版**，部分带头发，未达到最终参考片的抽象程度；正式批量生成前以本仓库的极简人物风格规范重新定妆。每期视频的旁白、商用素材和成片放在独立的视频工程目录，不直接塞进本仓库。
-
-## 项目边界
-
-此仓库只管理**生图叙事视频**的制作规范、角色母版、提示词和交付模板。不引用、导入或改写其他代码动效项目；两套工作流保持独立。真实案例必须核验事实，非真实情节标注「情景演绎」，不得把生成的聊天记录、证据或人物画面冒充真实取证资料。
-
-## A151 V3.1 角色锁定技术试片与当前限制
-
-已在对话附件中制作23秒**技术试看**：真实AI场景单图 + 固定透明抽象角色 + 原MP3/SRT + 静稳镜头，并从实际MP4做抽帧检测。该技术试看**不是最终成片**，人物与沙发/病床等真实接触、遮挡仍未通过视觉验收；52张正式背景与全长V3.1成片尚未完成。
-
-- [V3.1 角色锁定清单](references/role-lock-v31.json)（暂定，未美术批准）
-- [V3.1 固定透明人物原始SVG](assets/characters/locked-v31/)
-- [透明角色与写实场景合成脚本](scripts/compose_locked_scene.py)
-- [真实技术试看记录](episodes/A151/v3/technical-pilot-log.md)
-
-生成背景时禁止让AI重新绘制人物；预览必须从真正MP4抽帧，不生成拼贴海报代替成片预览。只有背景和人物相对比例、遮挡和光影通过审查后，才能将镜头纳入正式库。项目仍与 `vibe-motion-private` 独立。
-
-## 当前版本
-
-v0.1：独立 Skill、README、角色清单、透明 SVG 母版、分镜和交付验收规范。**这是一套可复用的制作规范与素材模板，不意味着已经部署可一键执行的自动生图/剪辑服务。**
+## 使用
+在本仓库向 Agent 说：“按本仓库的文字画风宪章和 A151 角色卡生成单镜头，先核对人物和环境真实比例，完成独立场景图，再继续视频合成。” 具体生图和视频服务必须是真正可用的工具，不能只凭 README 宣称已经部署自动流水线。

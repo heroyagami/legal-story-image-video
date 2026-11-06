@@ -1,6 +1,6 @@
 {
   "episode": "A151",
-  "version": "v3.1-perspective-calibrated",
+  "version": "v4-text-defined-characters",
   "created": "2026-11-05",
   "duration_audio": 203.4415,
   "last_srt_timestamp": 203.28,
@@ -8,17 +8,16 @@
   "created_images": 0,
   "render_status": "NOT_RENDERED",
   "notes": [
-    "Every scene requires a genuinely independent new photoreal environment image; crop/zoom/flip not counted as new asset.",
-    "No fake courtroom documents, medical records, banners, logo or video UI in generated background.",
-    "Still camera default; if moving slow, <=1.5% single direction, <=0.3% translation. No handheld jitter.",
-    "No upload of private MP3/SRT to public repo.",
-    "Character-to-environment scale follows real adult body dimensions, camera distance, foreground depth and local props (sofa, bed, chair, desk, door). NEVER downsize all characters to fit a fixed pixel-height percentage.",
-    "Manage overall composition with shot size/camera placement, not numeric height caps. Use environmental wide shots but keep nearby characters physically plausible."
+    "Each scene is a genuinely unique image, not crop/zoom/flip of another.",
+    "Character visual identity is governed by text + optional style reference and visual QA, never fixed SVG.",
+    "Characters are minimal 2D abstracts with white round faces, dot eyes and simplified black/brown hair, integrated into realistic cinematic environment.",
+    "Character-to-furniture scale follows camera and depth; do not apply a fixed pixel-percentage cap.",
+    "Stable camera only; avoid shake; SRT/MP3 synced after actual render.",
+    "No public sharing of private MP3/SRT."
   ],
   "shots": [
     {
       "id": "A151-S001",
-      "asset": "backgrounds/A151-BG001.png",
       "start": 0,
       "end": 3.36,
       "duration": 3.36,
@@ -29,17 +28,18 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "sofa seat height",
-        "backrest",
-        "coffee table",
-        "window"
-      ]
+      "roles": [
+        "widow_jl",
+        "patient_jl"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。 白色圆脸、黑点眼、简化稀疏黑灰短发、深蓝针织衫；病房时换低饱和病号服，保留头型与五官比例。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S001.png"
     },
     {
       "id": "A151-S002",
-      "asset": "backgrounds/A151-BG002.png",
       "start": 3.36,
       "end": 7.44,
       "duration": 4.08,
@@ -50,17 +50,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "sofa seat height",
-        "backrest",
-        "coffee table",
-        "window"
-      ]
+      "roles": [
+        "widow_jl"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S002.png"
     },
     {
       "id": "A151-S003",
-      "asset": "backgrounds/A151-BG003.png",
       "start": 7.44,
       "end": 10.58,
       "duration": 3.14,
@@ -71,16 +71,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S003.png"
     },
     {
       "id": "A151-S004",
-      "asset": "backgrounds/A151-BG004.png",
       "start": 10.58,
       "end": 14.8,
       "duration": 4.22,
@@ -91,17 +90,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "desk height",
-        "office chair",
-        "armrests",
-        "door frame"
-      ]
+      "roles": [
+        "lawyer"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色大圆脸、豆豆眼、简化黑短发、简约黑框眼镜、黑色律师袍或深色正装、红领带。沉稳，面部不是真人肖像。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S004.png"
     },
     {
       "id": "A151-S005",
-      "asset": "backgrounds/A151-BG005.png",
       "start": 14.8,
       "end": 18.24,
       "duration": 3.44,
@@ -112,16 +111,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [
+        "widow_jl"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S005.png"
     },
     {
       "id": "A151-S006",
-      "asset": "backgrounds/A151-BG006.png",
       "start": 18.24,
       "end": 22.64,
       "duration": 4.4,
@@ -132,37 +132,37 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [
+        "widow_jl",
+        "patient_jl"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。 白色圆脸、黑点眼、简化稀疏黑灰短发、深蓝针织衫；病房时换低饱和病号服，保留头型与五官比例。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S006.png"
     },
     {
       "id": "A151-S007",
-      "asset": "backgrounds/A151-BG007.png",
       "start": 22.64,
       "end": 26.12,
       "duration": 3.48,
       "beat": "医院手术",
-      "scene": "医院外景全景，清晨高楼及冷色玻璃幕墙，远处行人替换为无人物。情绪色温：cool，景别：establish。",
+      "scene": "医院外景全景，清晨高楼及冷色玻璃幕墙，完整无人的建筑外景。情绪色温：cool，景别：establish。",
       "character": "none",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "bed mattress height",
-        "bed length",
-        "bedside chair",
-        "caregiver natural seated body"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S007.png"
     },
     {
       "id": "A151-S008",
-      "asset": "backgrounds/A151-BG008.png",
       "start": 26.12,
       "end": 29.8,
       "duration": 3.68,
@@ -173,16 +173,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [
+        "daughter_jl"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "圆形白脸、豆豆眼、棕黑色齐肩简笔发型、暗红/深蓝外套与简易挎包。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S008.png"
     },
     {
       "id": "A151-S009",
-      "asset": "backgrounds/A151-BG009.png",
       "start": 29.8,
       "end": 34.44,
       "duration": 4.64,
@@ -193,17 +194,18 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "bed mattress height",
-        "bed length",
-        "bedside chair",
-        "caregiver natural seated body"
-      ]
+      "roles": [
+        "widow_jl",
+        "patient_jl"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。 白色圆脸、黑点眼、简化稀疏黑灰短发、深蓝针织衫；病房时换低饱和病号服，保留头型与五官比例。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S009.png"
     },
     {
       "id": "A151-S010",
-      "asset": "backgrounds/A151-BG010.png",
       "start": 34.44,
       "end": 39.32,
       "duration": 4.88,
@@ -214,16 +216,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S010.png"
     },
     {
       "id": "A151-S011",
-      "asset": "backgrounds/A151-BG011.png",
       "start": 39.32,
       "end": 43.6,
       "duration": 4.28,
@@ -234,16 +235,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [
+        "daughter_jl"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "圆形白脸、豆豆眼、棕黑色齐肩简笔发型、暗红/深蓝外套与简易挎包。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S011.png"
     },
     {
       "id": "A151-S012",
-      "asset": "backgrounds/A151-BG012.png",
       "start": 43.6,
       "end": 47.36,
       "duration": 3.76,
@@ -254,17 +256,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "desk height",
-        "office chair",
-        "armrests",
-        "door frame"
-      ]
+      "roles": [
+        "widow_jl"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S012.png"
     },
     {
       "id": "A151-S013",
-      "asset": "backgrounds/A151-BG013.png",
       "start": 47.36,
       "end": 53,
       "duration": 5.64,
@@ -275,16 +277,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S013.png"
     },
     {
       "id": "A151-S014",
-      "asset": "backgrounds/A151-BG014.png",
       "start": 53,
       "end": 58.76,
       "duration": 5.76,
@@ -295,17 +296,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "medium",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "desk height",
-        "office chair",
-        "armrests",
-        "door frame"
-      ]
+      "roles": [
+        "lawyer"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色大圆脸、豆豆眼、简化黑短发、简约黑框眼镜、黑色律师袍或深色正装、红领带。沉稳，面部不是真人肖像。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S014.png"
     },
     {
       "id": "A151-S015",
-      "asset": "backgrounds/A151-BG015.png",
       "start": 58.76,
       "end": 62.2,
       "duration": 3.44,
@@ -316,38 +317,37 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "detail",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "desk height",
-        "office chair",
-        "armrests",
-        "door frame"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S015.png"
     },
     {
       "id": "A151-S016",
-      "asset": "backgrounds/A151-BG016.png",
       "start": 62.2,
       "end": 66.36,
       "duration": 4.16,
       "beat": "可以酌情分配",
-      "scene": "办公室自然光下的两人隔桌咨询镜头，人物极小占据画面下方。情绪色温：neutral，景别：wide。",
+      "scene": "办公室自然光下的两人隔桌咨询镜头，人物依真实桌椅尺寸与摄影透视自然入镜。情绪色温：neutral，景别：wide。",
       "character": "lawyer+widow_jl",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "desk height",
-        "office chair",
-        "armrests",
-        "door frame"
-      ]
+      "roles": [
+        "lawyer",
+        "widow_jl"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色大圆脸、豆豆眼、简化黑短发、简约黑框眼镜、黑色律师袍或深色正装、红领带。沉稳，面部不是真人肖像。 白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S016.png"
     },
     {
       "id": "A151-S017",
-      "asset": "backgrounds/A151-BG017.png",
       "start": 66.36,
       "end": 70.76,
       "duration": 4.4,
@@ -358,16 +358,18 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [
+        "widow_jl",
+        "patient_jl"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。 白色圆脸、黑点眼、简化稀疏黑灰短发、深蓝针织衫；病房时换低饱和病号服，保留头型与五官比例。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S017.png"
     },
     {
       "id": "A151-S018",
-      "asset": "backgrounds/A151-BG018.png",
       "start": 70.76,
       "end": 74.04,
       "duration": 3.28,
@@ -378,17 +380,18 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "bed mattress height",
-        "bed length",
-        "bedside chair",
-        "caregiver natural seated body"
-      ]
+      "roles": [
+        "widow_jl",
+        "patient_jl"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。 白色圆脸、黑点眼、简化稀疏黑灰短发、深蓝针织衫；病房时换低饱和病号服，保留头型与五官比例。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S018.png"
     },
     {
       "id": "A151-S019",
-      "asset": "backgrounds/A151-BG019.png",
       "start": 74.04,
       "end": 76.74,
       "duration": 2.7,
@@ -399,16 +402,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S019.png"
     },
     {
       "id": "A151-S020",
-      "asset": "backgrounds/A151-BG020.png",
       "start": 76.74,
       "end": 83.3,
       "duration": 6.56,
@@ -419,16 +421,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S020.png"
     },
     {
       "id": "A151-S021",
-      "asset": "backgrounds/A151-BG021.png",
       "start": 83.3,
       "end": 85.2,
       "duration": 1.9,
@@ -439,16 +440,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [
+        "widow_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S021.png"
     },
     {
       "id": "A151-S022",
-      "asset": "backgrounds/A151-BG022.png",
       "start": 85.2,
       "end": 88.16,
       "duration": 2.96,
@@ -459,17 +461,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "sofa seat height",
-        "backrest",
-        "coffee table",
-        "window"
-      ]
+      "roles": [
+        "family_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "一位灰短发老年女性及一位黑短发成年男性，同为白色圆脸、豆豆眼，服饰以酒红/深灰区别，不与主角混淆。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S022.png"
     },
     {
       "id": "A151-S023",
-      "asset": "backgrounds/A151-BG023.png",
       "start": 88.16,
       "end": 91.96,
       "duration": 3.8,
@@ -480,16 +482,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S023.png"
     },
     {
       "id": "A151-S024",
-      "asset": "backgrounds/A151-BG024.png",
       "start": 91.96,
       "end": 98.28,
       "duration": 6.32,
@@ -500,16 +501,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "detail",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S024.png"
     },
     {
       "id": "A151-S025",
-      "asset": "backgrounds/A151-BG025.png",
       "start": 98.28,
       "end": 101.16,
       "duration": 2.88,
@@ -520,16 +520,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [
+        "widow_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S025.png"
     },
     {
       "id": "A151-S026",
-      "asset": "backgrounds/A151-BG026.png",
       "start": 101.16,
       "end": 105.85,
       "duration": 4.69,
@@ -540,17 +541,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "bed mattress height",
-        "bed length",
-        "bedside chair",
-        "caregiver natural seated body"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S026.png"
     },
     {
       "id": "A151-S027",
-      "asset": "backgrounds/A151-BG027.png",
       "start": 105.85,
       "end": 109.2,
       "duration": 3.35,
@@ -561,17 +560,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "bed mattress height",
-        "bed length",
-        "bedside chair",
-        "caregiver natural seated body"
-      ]
+      "roles": [
+        "patient_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S027.png"
     },
     {
       "id": "A151-S028",
-      "asset": "backgrounds/A151-BG028.png",
       "start": 109.2,
       "end": 115.24,
       "duration": 6.04,
@@ -582,38 +581,39 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "bed mattress height",
-        "bed length",
-        "bedside chair",
-        "caregiver natural seated body"
-      ]
+      "roles": [
+        "widow_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S028.png"
     },
     {
       "id": "A151-S029",
-      "asset": "backgrounds/A151-BG029.png",
       "start": 115.39,
       "end": 118.52,
       "duration": 3.13,
       "beat": "长年照料",
-      "scene": "陪护者在病房里为病人掖被角，广角透视，人物占比小。情绪色温：warm，景别：wide。",
+      "scene": "陪护者在病房里为病人掖被角，广角透视，人物与病床、椅子比例自然、真实接触。情绪色温：warm，景别：wide。",
       "character": "couple_cq",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "bed mattress height",
-        "bed length",
-        "bedside chair",
-        "caregiver natural seated body"
-      ]
+      "roles": [
+        "widow_cq",
+        "patient_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。 白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S029.png"
     },
     {
       "id": "A151-S030",
-      "asset": "backgrounds/A151-BG030.png",
       "start": 118.52,
       "end": 122.04,
       "duration": 3.52,
@@ -624,17 +624,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "bed mattress height",
-        "bed length",
-        "bedside chair",
-        "caregiver natural seated body"
-      ]
+      "roles": [
+        "widow_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S030.png"
     },
     {
       "id": "A151-S031",
-      "asset": "backgrounds/A151-BG031.png",
       "start": 122.04,
       "end": 126.8,
       "duration": 4.76,
@@ -645,16 +645,18 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [
+        "widow_cq",
+        "patient_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。 白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S031.png"
     },
     {
       "id": "A151-S032",
-      "asset": "backgrounds/A151-BG032.png",
       "start": 126.8,
       "end": 130.2,
       "duration": 3.4,
@@ -665,16 +667,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [
+        "widow_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S032.png"
     },
     {
       "id": "A151-S033",
-      "asset": "backgrounds/A151-BG033.png",
       "start": 130.2,
       "end": 134.04,
       "duration": 3.84,
@@ -685,17 +688,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "sofa seat height",
-        "backrest",
-        "coffee table",
-        "window"
-      ]
+      "roles": [
+        "widow_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S033.png"
     },
     {
       "id": "A151-S034",
-      "asset": "backgrounds/A151-BG034.png",
       "start": 134.04,
       "end": 136.8,
       "duration": 2.76,
@@ -706,16 +709,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [
+        "family_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "一位灰短发老年女性及一位黑短发成年男性，同为白色圆脸、豆豆眼，服饰以酒红/深灰区别，不与主角混淆。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S034.png"
     },
     {
       "id": "A151-S035",
-      "asset": "backgrounds/A151-BG035.png",
       "start": 136.8,
       "end": 139.6,
       "duration": 2.8,
@@ -726,17 +730,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "desk height",
-        "office chair",
-        "armrests",
-        "door frame"
-      ]
+      "roles": [
+        "lawyer"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色大圆脸、豆豆眼、简化黑短发、简约黑框眼镜、黑色律师袍或深色正装、红领带。沉稳，面部不是真人肖像。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S035.png"
     },
     {
       "id": "A151-S036",
-      "asset": "backgrounds/A151-BG036.png",
       "start": 139.6,
       "end": 141.72,
       "duration": 2.12,
@@ -747,16 +751,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S036.png"
     },
     {
       "id": "A151-S037",
-      "asset": "backgrounds/A151-BG037.png",
       "start": 141.72,
       "end": 146.2,
       "duration": 4.48,
@@ -767,16 +770,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S037.png"
     },
     {
       "id": "A151-S038",
-      "asset": "backgrounds/A151-BG038.png",
       "start": 146.2,
       "end": 152.92,
       "duration": 6.72,
@@ -787,16 +789,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "detail",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S038.png"
     },
     {
       "id": "A151-S039",
-      "asset": "backgrounds/A151-BG039.png",
       "start": 152.92,
       "end": 159.24,
       "duration": 6.32,
@@ -807,16 +808,18 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [
+        "widow_cq",
+        "patient_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。 白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S039.png"
     },
     {
       "id": "A151-S040",
-      "asset": "backgrounds/A151-BG040.png",
       "start": 159.24,
       "end": 161.76,
       "duration": 2.52,
@@ -827,17 +830,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "desk height",
-        "office chair",
-        "armrests",
-        "door frame"
-      ]
+      "roles": [
+        "lawyer"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色大圆脸、豆豆眼、简化黑短发、简约黑框眼镜、黑色律师袍或深色正装、红领带。沉稳，面部不是真人肖像。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S040.png"
     },
     {
       "id": "A151-S041",
-      "asset": "backgrounds/A151-BG041.png",
       "start": 161.76,
       "end": 165.12,
       "duration": 3.36,
@@ -848,17 +851,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "detail",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "desk height",
-        "office chair",
-        "armrests",
-        "door frame"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S041.png"
     },
     {
       "id": "A151-S042",
-      "asset": "backgrounds/A151-BG042.png",
       "start": 165.12,
       "end": 168.88,
       "duration": 3.76,
@@ -869,16 +870,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S042.png"
     },
     {
       "id": "A151-S043",
-      "asset": "backgrounds/A151-BG043.png",
       "start": 168.88,
       "end": 173.63,
       "duration": 4.75,
@@ -889,17 +889,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "detail",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "desk height",
-        "office chair",
-        "armrests",
-        "door frame"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S043.png"
     },
     {
       "id": "A151-S044",
-      "asset": "backgrounds/A151-BG044.png",
       "start": 173.63,
       "end": 176.44,
       "duration": 2.81,
@@ -910,16 +908,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "detail",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S044.png"
     },
     {
       "id": "A151-S045",
-      "asset": "backgrounds/A151-BG045.png",
       "start": 176.44,
       "end": 179.68,
       "duration": 3.24,
@@ -930,17 +927,17 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "bed mattress height",
-        "bed length",
-        "bedside chair",
-        "caregiver natural seated body"
-      ]
+      "roles": [
+        "widow_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S045.png"
     },
     {
       "id": "A151-S046",
-      "asset": "backgrounds/A151-BG046.png",
       "start": 179.68,
       "end": 183.2,
       "duration": 3.52,
@@ -951,17 +948,18 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "sofa seat height",
-        "backrest",
-        "coffee table",
-        "window"
-      ]
+      "roles": [
+        "widow_cq",
+        "patient_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。 白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S046.png"
     },
     {
       "id": "A151-S047",
-      "asset": "backgrounds/A151-BG047.png",
       "start": 183.2,
       "end": 185.4,
       "duration": 2.2,
@@ -972,16 +970,18 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [
+        "widow_cq",
+        "patient_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。 白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S047.png"
     },
     {
       "id": "A151-S048",
-      "asset": "backgrounds/A151-BG048.png",
       "start": 185.4,
       "end": 189.56,
       "duration": 4.16,
@@ -992,16 +992,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "detail",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S048.png"
     },
     {
       "id": "A151-S049",
-      "asset": "backgrounds/A151-BG049.png",
       "start": 189.56,
       "end": 192.56,
       "duration": 3,
@@ -1012,16 +1011,18 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [
+        "widow_cq",
+        "patient_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。 白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S049.png"
     },
     {
       "id": "A151-S050",
-      "asset": "backgrounds/A151-BG050.png",
       "start": 192.56,
       "end": 194.8,
       "duration": 2.24,
@@ -1032,16 +1033,15 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "doors/people-scale architecture",
-        "foreground floor plane",
-        "scene props at matched depth"
-      ]
+      "roles": [],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S050.png"
     },
     {
       "id": "A151-S051",
-      "asset": "backgrounds/A151-BG051.png",
       "start": 194.8,
       "end": 199.52,
       "duration": 4.72,
@@ -1052,17 +1052,18 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "bed mattress height",
-        "bed length",
-        "bedside chair",
-        "caregiver natural seated body"
-      ]
+      "roles": [
+        "widow_cq",
+        "patient_cq"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。 白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S051.png"
     },
     {
       "id": "A151-S052",
-      "asset": "backgrounds/A151-BG052.png",
       "start": 199.6,
       "end": 203.28,
       "duration": 3.68,
@@ -1073,13 +1074,26 @@
       "status": "NOT_GENERATED",
       "unique_background_required": true,
       "framing": "wide",
-      "character_scale_rule": "perspective_matched_to_furniture_and_depth",
-      "scale_anchors": [
-        "desk height",
-        "office chair",
-        "armrests",
-        "door frame"
-      ]
+      "roles": [
+        "lawyer"
+      ],
+      "integrated_scene_required": true,
+      "reference_style": "docs/visual-style-bible.md",
+      "character_description": "白色大圆脸、豆豆眼、简化黑短发、简约黑框眼镜、黑色律师袍或深色正装、红领带。沉稳，面部不是真人肖像。",
+      "scene_status": "NOT_GENERATED",
+      "output_image": "shots/A151-S052.png"
     }
+  ],
+  "style_authority": "docs/visual-style-bible.md",
+  "character_authority": "references/a151-character-bible.md",
+  "image_workflow": "integrated_character_and_cinematic_environment_generation",
+  "disallowed": [
+    "SVG sticker compositing",
+    "mandatory bald white ball faces",
+    "real-human actors",
+    "anime large eyes",
+    "3D plastic balls",
+    "storyboard collage as scene",
+    "geometry-only backgrounds"
   ]
 }

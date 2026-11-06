@@ -1,67 +1,48 @@
 {
-  "schema_version": 1,
-  "style": "minimal abstract white round head, flat color, black outline; photorealistic environment separate",
-  "characters": [
-    {
-      "id": "lawyer_caoyide",
-      "label": "曹义德律师",
-      "visual": "round white head, tiny black eyes, small glasses, black lawyer robe, red tie",
-      "role": "lawyer/narrator",
-      "svg": "assets/characters/vector/lawyer-caoyide-standing.svg"
+  "schema_version": 2,
+  "style_source": "docs/visual-style-bible.md",
+  "authority": "text_description_not_asset",
+  "character_model": "minimal abstract 2D with simplified black/brown hair and dot eyes; realistically detailed cinematic environments",
+  "roles": {
+    "lawyer": {
+      "display_name": "曹义德律师（抽象化主持角色）",
+      "visual_description": "白色大圆脸、豆豆眼、简化黑短发、简约黑框眼镜、黑色律师袍或深色正装、红领带。沉稳，面部不是真人肖像。",
+      "asset_required": false
     },
-    {
-      "id": "lawyer_caoyide_talking",
-      "label": "曹义德律师（讲解）",
-      "visual": "same lawyer; raised explaining hand",
-      "role": "variant",
-      "svg": "assets/characters/vector/lawyer-caoyide-speaking.svg"
+    "widow_jl": {
+      "display_name": "吉林案金某",
+      "visual_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。",
+      "asset_required": false
     },
-    {
-      "id": "buyer",
-      "label": "购房者",
-      "visual": "round white head, blue hoodie, backpack",
-      "role": "story protagonist",
-      "svg": "assets/characters/vector/buyer-blue-hoodie.svg"
+    "patient_jl": {
+      "display_name": "吉林案千某",
+      "visual_description": "白色圆脸、黑点眼、简化稀疏黑灰短发、深蓝针织衫；病房时换低饱和病号服，保留头型与五官比例。",
+      "asset_required": false
     },
-    {
-      "id": "wife",
-      "label": "妻子",
-      "visual": "round white head, beige cardigan",
-      "role": "spouse",
-      "svg": "assets/characters/vector/wife-beige-cardigan.svg"
+    "daughter_jl": {
+      "display_name": "吉林案女儿",
+      "visual_description": "圆形白脸、豆豆眼、棕黑色齐肩简笔发型、暗红/深蓝外套与简易挎包。",
+      "asset_required": false
     },
-    {
-      "id": "child",
-      "label": "孩子",
-      "visual": "round white head, yellow hoodie, blue shorts",
-      "role": "child",
-      "svg": "assets/characters/vector/child-yellow-blue.svg"
+    "widow_cq": {
+      "display_name": "重庆案杨某",
+      "visual_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。",
+      "asset_required": false
     },
-    {
-      "id": "father",
-      "label": "父亲",
-      "visual": "round white head, charcoal coat, cane",
-      "role": "elder",
-      "svg": "assets/characters/vector/father-charcoal.svg"
+    "patient_cq": {
+      "display_name": "重庆案汪某",
+      "visual_description": "白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
+      "asset_required": false
     },
-    {
-      "id": "mother",
-      "label": "母亲",
-      "visual": "round white head, rust cardigan",
-      "role": "elder",
-      "svg": "assets/characters/vector/mother-rust.svg"
-    },
-    {
-      "id": "sales_agent",
-      "label": "售楼顾问",
-      "visual": "round white head, dark suit",
-      "role": "supporting",
-      "svg": "assets/characters/vector/sales-agent.svg"
+    "family_cq": {
+      "display_name": "重庆案法定继承人配角",
+      "visual_description": "一位灰短发老年女性及一位黑短发成年男性，同为白色圆脸、豆豆眼，服饰以酒红/深灰区别，不与主角混淆。",
+      "asset_required": false
     }
-  ],
+  },
+  "no_required_vector_assets": true,
   "notes": [
-    "SVG is transparent by default, render RGBA PNG in an external image editor when needed.",
-    "This is an original reusable character design, not a pixel-perfect copy of the reference video.",
-    "Earlier separate PNG concept pack contains different stylization; do not treat as production canonical characters."
+    "Role matching uses text descriptions and optional image references, not SVG cutouts.",
+    "Historical vector assets removed from active repo; generated full-scene images remain subject to visual QA."
   ]
 }

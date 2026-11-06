@@ -1,6 +1,6 @@
 {
   "episode": "A151",
-  "version": "v4.1-integrated-shots",
+  "version": "v4.2-srt-canonical-continuous",
   "created": "2026-11-05",
   "duration_audio": 203.4415,
   "last_srt_timestamp": 203.28,
@@ -572,8 +572,8 @@
     {
       "id": "A151-S028",
       "start": 109.2,
-      "end": 115.24,
-      "duration": 6.04,
+      "end": 115.39,
+      "duration": 6.19,
       "beat": "病危与签署",
       "scene": "医院护士站朝病房走廊的长镜头，签字台和病历夹、无清晰文字。情绪色温：neutral，景别：wide。",
       "character": "widow_cq",
@@ -1043,8 +1043,8 @@
     {
       "id": "A151-S051",
       "start": 194.8,
-      "end": 199.52,
-      "duration": 4.72,
+      "end": 199.6,
+      "duration": 4.8,
       "beat": "陪伴走过疾病",
       "scene": "医院花园夕阳下远处两位老年人的背影，极简人物。情绪色温：hope，景别：extreme_wide。",
       "character": "couple_cq",
@@ -1095,5 +1095,8 @@
     "3D plastic balls",
     "storyboard collage as scene",
     "geometry-only backgrounds"
-  ]
+  ],
+  "srt_canonical_path": "episodes/A151/inputs/subtitles-latest.srt",
+  "audio_duration_seconds": 203.4415,
+  "subtitle_last_end_seconds": 203.28
 }

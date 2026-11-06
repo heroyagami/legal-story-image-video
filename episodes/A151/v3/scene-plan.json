@@ -1,6 +1,6 @@
 {
   "episode": "A151",
-  "version": "v4-text-defined-characters",
+  "version": "v4.1-integrated-shots",
   "created": "2026-11-05",
   "duration_audio": 203.4415,
   "last_srt_timestamp": 203.28,
@@ -26,7 +26,6 @@
       "character": "two_adults",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_jl",
@@ -36,7 +35,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。 白色圆脸、黑点眼、简化稀疏黑灰短发、深蓝针织衫；病房时换低饱和病号服，保留头型与五官比例。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S001.png"
+      "output_image": "shots/A151-S001.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S002",
@@ -48,7 +48,6 @@
       "character": "widow_jl",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_jl"
@@ -57,7 +56,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S002.png"
+      "output_image": "shots/A151-S002.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S003",
@@ -69,14 +69,14 @@
       "character": "none",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S003.png"
+      "output_image": "shots/A151-S003.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S004",
@@ -88,7 +88,6 @@
       "character": "lawyer",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "lawyer"
@@ -97,7 +96,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色大圆脸、豆豆眼、简化黑短发、简约黑框眼镜、黑色律师袍或深色正装、红领带。沉稳，面部不是真人肖像。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S004.png"
+      "output_image": "shots/A151-S004.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S005",
@@ -109,7 +109,6 @@
       "character": "widow_jl",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_jl"
@@ -118,7 +117,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S005.png"
+      "output_image": "shots/A151-S005.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S006",
@@ -130,7 +130,6 @@
       "character": "couple_jl",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_jl",
@@ -140,7 +139,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。 白色圆脸、黑点眼、简化稀疏黑灰短发、深蓝针织衫；病房时换低饱和病号服，保留头型与五官比例。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S006.png"
+      "output_image": "shots/A151-S006.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S007",
@@ -152,14 +152,14 @@
       "character": "none",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S007.png"
+      "output_image": "shots/A151-S007.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S008",
@@ -171,7 +171,6 @@
       "character": "daughter_jl",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "daughter_jl"
@@ -180,7 +179,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "圆形白脸、豆豆眼、棕黑色齐肩简笔发型、暗红/深蓝外套与简易挎包。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S008.png"
+      "output_image": "shots/A151-S008.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S009",
@@ -192,7 +192,6 @@
       "character": "couple_jl",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_jl",
@@ -202,7 +201,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。 白色圆脸、黑点眼、简化稀疏黑灰短发、深蓝针织衫；病房时换低饱和病号服，保留头型与五官比例。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S009.png"
+      "output_image": "shots/A151-S009.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S010",
@@ -214,14 +214,14 @@
       "character": "none",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S010.png"
+      "output_image": "shots/A151-S010.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S011",
@@ -233,7 +233,6 @@
       "character": "daughter_jl",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "daughter_jl"
@@ -242,7 +241,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "圆形白脸、豆豆眼、棕黑色齐肩简笔发型、暗红/深蓝外套与简易挎包。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S011.png"
+      "output_image": "shots/A151-S011.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S012",
@@ -254,7 +254,6 @@
       "character": "widow_jl",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_jl"
@@ -263,7 +262,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S012.png"
+      "output_image": "shots/A151-S012.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S013",
@@ -275,14 +275,14 @@
       "character": "none",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S013.png"
+      "output_image": "shots/A151-S013.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S014",
@@ -294,7 +294,6 @@
       "character": "lawyer",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "medium",
       "roles": [
         "lawyer"
@@ -303,7 +302,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色大圆脸、豆豆眼、简化黑短发、简约黑框眼镜、黑色律师袍或深色正装、红领带。沉稳，面部不是真人肖像。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S014.png"
+      "output_image": "shots/A151-S014.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S015",
@@ -315,14 +315,14 @@
       "character": "none",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "detail",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S015.png"
+      "output_image": "shots/A151-S015.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S016",
@@ -334,7 +334,6 @@
       "character": "lawyer+widow_jl",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "lawyer",
@@ -344,7 +343,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色大圆脸、豆豆眼、简化黑短发、简约黑框眼镜、黑色律师袍或深色正装、红领带。沉稳，面部不是真人肖像。 白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S016.png"
+      "output_image": "shots/A151-S016.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S017",
@@ -356,7 +356,6 @@
       "character": "couple_jl",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_jl",
@@ -366,7 +365,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。 白色圆脸、黑点眼、简化稀疏黑灰短发、深蓝针织衫；病房时换低饱和病号服，保留头型与五官比例。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S017.png"
+      "output_image": "shots/A151-S017.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S018",
@@ -378,7 +378,6 @@
       "character": "couple_jl",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_jl",
@@ -388,7 +387,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色大圆脸、黑点眼、简单棕色低盘发、米色针织衫、深咖或灰棕长裤；情绪通过身体姿态和少量眉嘴表达。 白色圆脸、黑点眼、简化稀疏黑灰短发、深蓝针织衫；病房时换低饱和病号服，保留头型与五官比例。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S018.png"
+      "output_image": "shots/A151-S018.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S019",
@@ -400,14 +400,14 @@
       "character": "none",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S019.png"
+      "output_image": "shots/A151-S019.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S020",
@@ -419,14 +419,14 @@
       "character": "none",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S020.png"
+      "output_image": "shots/A151-S020.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S021",
@@ -438,7 +438,6 @@
       "character": "widow_cq",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_cq"
@@ -447,7 +446,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S021.png"
+      "output_image": "shots/A151-S021.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S022",
@@ -459,7 +459,6 @@
       "character": "family_cq",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "family_cq"
@@ -468,7 +467,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "一位灰短发老年女性及一位黑短发成年男性，同为白色圆脸、豆豆眼，服饰以酒红/深灰区别，不与主角混淆。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S022.png"
+      "output_image": "shots/A151-S022.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S023",
@@ -480,14 +480,14 @@
       "character": "none",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S023.png"
+      "output_image": "shots/A151-S023.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S024",
@@ -499,14 +499,14 @@
       "character": "none",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "detail",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S024.png"
+      "output_image": "shots/A151-S024.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S025",
@@ -518,7 +518,6 @@
       "character": "widow_cq",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_cq"
@@ -527,7 +526,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S025.png"
+      "output_image": "shots/A151-S025.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S026",
@@ -539,14 +539,14 @@
       "character": "none",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S026.png"
+      "output_image": "shots/A151-S026.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S027",
@@ -558,7 +558,6 @@
       "character": "patient_cq",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "patient_cq"
@@ -567,7 +566,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S027.png"
+      "output_image": "shots/A151-S027.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S028",
@@ -579,7 +579,6 @@
       "character": "widow_cq",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_cq"
@@ -588,7 +587,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S028.png"
+      "output_image": "shots/A151-S028.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S029",
@@ -600,7 +600,6 @@
       "character": "couple_cq",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_cq",
@@ -610,7 +609,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。 白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S029.png"
+      "output_image": "shots/A151-S029.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S030",
@@ -622,7 +622,6 @@
       "character": "widow_cq",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_cq"
@@ -631,7 +630,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S030.png"
+      "output_image": "shots/A151-S030.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S031",
@@ -643,7 +643,6 @@
       "character": "couple_cq",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_cq",
@@ -653,7 +652,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。 白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S031.png"
+      "output_image": "shots/A151-S031.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S032",
@@ -665,7 +665,6 @@
       "character": "widow_cq",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_cq"
@@ -674,7 +673,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S032.png"
+      "output_image": "shots/A151-S032.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S033",
@@ -686,7 +686,6 @@
       "character": "widow_cq",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_cq"
@@ -695,7 +694,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S033.png"
+      "output_image": "shots/A151-S033.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S034",
@@ -707,7 +707,6 @@
       "character": "family_cq",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "family_cq"
@@ -716,7 +715,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "一位灰短发老年女性及一位黑短发成年男性，同为白色圆脸、豆豆眼，服饰以酒红/深灰区别，不与主角混淆。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S034.png"
+      "output_image": "shots/A151-S034.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S035",
@@ -728,7 +728,6 @@
       "character": "lawyer",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "lawyer"
@@ -737,7 +736,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色大圆脸、豆豆眼、简化黑短发、简约黑框眼镜、黑色律师袍或深色正装、红领带。沉稳，面部不是真人肖像。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S035.png"
+      "output_image": "shots/A151-S035.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S036",
@@ -749,14 +749,14 @@
       "character": "none",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S036.png"
+      "output_image": "shots/A151-S036.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S037",
@@ -768,14 +768,14 @@
       "character": "none",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S037.png"
+      "output_image": "shots/A151-S037.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S038",
@@ -787,14 +787,14 @@
       "character": "none",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "detail",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S038.png"
+      "output_image": "shots/A151-S038.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S039",
@@ -806,7 +806,6 @@
       "character": "couple_cq",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_cq",
@@ -816,7 +815,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。 白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S039.png"
+      "output_image": "shots/A151-S039.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S040",
@@ -828,7 +828,6 @@
       "character": "lawyer",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "lawyer"
@@ -837,7 +836,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色大圆脸、豆豆眼、简化黑短发、简约黑框眼镜、黑色律师袍或深色正装、红领带。沉稳，面部不是真人肖像。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S040.png"
+      "output_image": "shots/A151-S040.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S041",
@@ -849,14 +849,14 @@
       "character": "none",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "detail",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S041.png"
+      "output_image": "shots/A151-S041.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S042",
@@ -868,14 +868,14 @@
       "character": "none",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S042.png"
+      "output_image": "shots/A151-S042.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S043",
@@ -887,14 +887,14 @@
       "character": "none",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "detail",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S043.png"
+      "output_image": "shots/A151-S043.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S044",
@@ -906,14 +906,14 @@
       "character": "none",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "detail",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S044.png"
+      "output_image": "shots/A151-S044.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S045",
@@ -925,7 +925,6 @@
       "character": "widow_cq",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_cq"
@@ -934,7 +933,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S045.png"
+      "output_image": "shots/A151-S045.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S046",
@@ -946,7 +946,6 @@
       "character": "couple_cq",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_cq",
@@ -956,7 +955,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。 白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S046.png"
+      "output_image": "shots/A151-S046.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S047",
@@ -968,7 +968,6 @@
       "character": "couple_cq",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_cq",
@@ -978,7 +977,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。 白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S047.png"
+      "output_image": "shots/A151-S047.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S048",
@@ -990,14 +990,14 @@
       "character": "none",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "detail",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S048.png"
+      "output_image": "shots/A151-S048.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S049",
@@ -1009,7 +1009,6 @@
       "character": "couple_cq",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_cq",
@@ -1019,7 +1018,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。 白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S049.png"
+      "output_image": "shots/A151-S049.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S050",
@@ -1031,14 +1031,14 @@
       "character": "none",
       "camera": "slow_pull",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [],
       "integrated_scene_required": true,
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S050.png"
+      "output_image": "shots/A151-S050.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S051",
@@ -1050,7 +1050,6 @@
       "character": "couple_cq",
       "camera": "static",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "widow_cq",
@@ -1060,7 +1059,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色圆脸、点眼、简洁棕色束发、浅灰绿开衫和暖色围巾；与吉林案女主衣着、发型明显区分。 白色圆脸、点眼、简短黑灰发型、灰蓝衣着；病中以医院服装、卧床姿态区分。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S051.png"
+      "output_image": "shots/A151-S051.png",
+      "unique_full_image_required": true
     },
     {
       "id": "A151-S052",
@@ -1072,7 +1072,6 @@
       "character": "lawyer",
       "camera": "slow_push",
       "status": "NOT_GENERATED",
-      "unique_background_required": true,
       "framing": "wide",
       "roles": [
         "lawyer"
@@ -1081,7 +1080,8 @@
       "reference_style": "docs/visual-style-bible.md",
       "character_description": "白色大圆脸、豆豆眼、简化黑短发、简约黑框眼镜、黑色律师袍或深色正装、红领带。沉稳，面部不是真人肖像。",
       "scene_status": "NOT_GENERATED",
-      "output_image": "shots/A151-S052.png"
+      "output_image": "shots/A151-S052.png",
+      "unique_full_image_required": true
     }
   ],
   "style_authority": "docs/visual-style-bible.md",

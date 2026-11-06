@@ -1,20 +1,20 @@
 {
-  "version": "v3.1-draft",
+  "version": "v3.1-draft-locked-svg",
   "canonical_status": "DRAFT_NOT_APPROVED",
   "rule": "Never ask image generation to redraw a person within a scene; use immutable character transparent asset + change pose asset intentionally.",
   "roles": {
     "caoyide_lawyer": {
-      "asset": "assets/characters/vector/lawyer-caoyide-speaking.svg",
+      "asset": "assets/characters/locked-v31/lawyer.svg",
       "character_id": "caoyide_lawyer",
       "visual": "white round head, glasses, black suit/robe, red tie"
     },
     "jilin_woman": {
-      "asset": "assets/characters/vector/wife-beige-cardigan.svg",
+      "asset": "assets/characters/locked-v31/female.svg",
       "character_id": "jilin_woman",
       "visual": "white round head, neutral-beige jacket"
     },
     "jilin_man": {
-      "asset": "assets/characters/vector/buyer-blue-hoodie.svg",
+      "asset": "assets/characters/locked-v31/male.svg",
       "character_id": "jilin_man",
       "visual": "white round head, blue garment"
     },
@@ -32,6 +32,11 @@
       "asset": null,
       "character_id": "hospital_staff",
       "status": "NOT_DESIGNED"
+    },
+    "jilin_woman_sad": {
+      "asset": "assets/characters/locked-v31/female_sad.svg",
+      "character_id": "jilin_woman_sad",
+      "visual": "same face/wardrobe as jilin_woman, sad expression"
     }
   },
   "output_rules": [
@@ -41,5 +46,6 @@
     "Use foreground occlusion and contact shadows; deny scenes with hovering people",
     "Video preview thumbnails must be extracted from the actual MP4, never generated as separate storyboard or collage",
     "Do not allow export unless all scene QC passed"
-  ]
+  ],
+  "notes": "V3.1 technical pilot uses these four SVGs; additional roles must be designed and reviewed before use. Existing other-role SVGs are not automatically approved."
 }

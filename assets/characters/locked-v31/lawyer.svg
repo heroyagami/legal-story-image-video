@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="230" height="360" viewBox="0 0 230 360">
+  <title>曹义德律师_讲解</title>
+  <g stroke="#25272a" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M66 249 Q52 258 62 282 L108 294 L137 270 L131 244 Z" fill="#272830" stroke-width="5"/>
+  <path d="M113 254 Q153 251 172 281 L160 300 L129 297 L104 268" fill="#272830" stroke-width="5"/>
+  <path d="M70 282 L65 329 Q60 341 88 341 L100 336 L100 289" fill="#272830" stroke-width="5"/><path d="M66 329 Q55 335 63 350 L103 352 Q115 337 100 329" fill="#2b2932" stroke-width="4"/>
+  <path d="M159 290 L157 332 Q156 344 184 341 L189 300" fill="#272830" stroke-width="5"/><path d="M156 331 Q149 342 161 352 L196 352 Q201 341 189 332" fill="#282a30" stroke-width="4"/>
+  <path d="M58 156 Q112 133 166 154 L171 237 Q112 253 61 233 Z" fill="#242730" stroke-width="5"/>
+  <path d="M68 177 Q47 200 70 232" fill="none" stroke="#242730" stroke-width="29"/>
+  <path d="M164 178 Q181 208 145 230" fill="none" stroke="#242730" stroke-width="29"/>
+  <path d="M69 229 Q82 224 92 230" fill="#fff" stroke-width="4"/>
+  <path d="M145 230 Q134 224 127 230" fill="#fff" stroke-width="4"/>
+  <path d="M111 156 L124 157 L130 174 L117 221 L105 172 Z" fill="#b52d3c" stroke="#222" stroke-width="2"/>
+  <circle cx="115" cy="98" r="60" fill="#ffffff" stroke-width="5"/>
+  <ellipse cx="91" cy="104" rx="4.6" ry="6" fill="#222"/><ellipse cx="137" cy="104" rx="4.6" ry="6" fill="#222"/><path d="M102 125 Q112 134 123 125" stroke="#222" stroke-width="3" fill="none"/><rect x="71" y="89" width="42" height="31" rx="10" fill="none" stroke="#222" stroke-width="4"/><rect x="118" y="89" width="41" height="31" rx="10" fill="none" stroke="#222" stroke-width="4"/><path d="M113 103 H118 M71 103 L59 100 M159 103 L171 100" stroke="#222" stroke-width="4"/>
+  </g></svg>

@@ -42,3 +42,9 @@
 - `v3/scene-plan.json` 的固定人物占比字段已废弃并替换成 `framing`、`scale_anchors` 和 `character_scale_rule`。
 - 参阅 [真实透视与构图标准](../../docs/perspective-and-framing.md)。
 - 目前仍为制作规划修订，不能据此称作已完成52张生图或新版成片。
+
+
+## V3.1 角色锁定与技术试看（2026-11-06）
+- 已做4场景、23秒H.264/AAC**技术试看**，已对齐原MP3及前23秒SRT；视频在对话附件内，不公开上传。
+- 用固定白圆头透明角色替代AI随镜头重绘真人；但人物与家具/被子、场景的接触和遮挡仍有问题，**不算正式成片，不计入52张合格图**。
+- [实测问题与改进措施](v3/technical-pilot-log.md)；角色映射 `../../references/role-lock-v31.json`；合成程序 `../../scripts/compose_locked_scene.py`。
